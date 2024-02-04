@@ -93,4 +93,85 @@ int main()
             break;
         }
     }
+
+    //* Print only Odd Numbers from One to Ten and Skip Even  Numbers using Continue
+    for (int i = 1; i <= 10; i++)
+    {
+        if (i % 2 == 0)
+        {
+            continue;
+        }
+        cout << i << " ";
+    }
+
+    //* While Loop
+    /*
+        While loop only taken the condition and rest initializer and updation
+        we need to add before outsize the while loop and end of the while loop
+        repectively
+    */
+    //* Initializer
+    int i = 1;
+    //* Condition
+    while (i <= 10)
+    {
+        cout << i << " ";
+        //* Updation
+        i = i + 1;
+    }
+    cout << endl;
+
+    //* Break Statement works similarly in while Loop
+    //* Initializer
+    i = 1;
+    while (i <= 10)
+    {
+        if (i == 5)
+        {
+            break;
+        }
+        cout << i << " ";
+        i = i + 1;
+    }
+    cout << endl;
+    /*
+        Conitinue also works same but in case of while loop if skip an iteration
+        then before skipping we need to update the initializer because if we skip
+        the iteration then increment statement which executes at last is also skip
+        so we stuck at infinite loop, that's why updation is mendatory before skip
+        the iteration
+    */
+
+    //* Print Odd Numbers
+    i = 1;
+    while (i <= 10)
+    {
+        if (i % 2 == 0)
+        {
+            i++;
+            continue;
+        }
+        cout << i << " ";
+        i++;
+    }
+    cout << endl;
+
+    //* Do While Loop
+    /*
+        Do While Loop Always executes at once because as code suggest first
+        we complete minimum one iteration after that condition is checked so
+        whenever we want to run loop atleast once then we need to use do while
+        loop
+    */
+    i = 1;
+    do
+    {
+        /* code */
+        cout << i << " ";
+        i++;
+    } while (/* condition */ i <= 10);
+
+    /*
+        Break and Continue is also working same as while loop
+    */
 }
